@@ -7,7 +7,7 @@ export default {
   title: "Components/Toast",
   component: Toast,
   parameters: {
-    layout: "centered",
+    layout: "centered", // Set layout to "centered"
   },
   argTypes: {
     iconContainer: {
@@ -15,7 +15,6 @@ export default {
         type: "boolean",
       },
     },
-
     icon: {
       control: {
         type: "select",
