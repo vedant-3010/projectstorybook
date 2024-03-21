@@ -6,6 +6,7 @@ import Toast from "./Toast";
 export default {
   title: "Components/Toast",
   component: Toast,
+  tags: ['autodocs'],
   parameters: {
     layout: "centered", // Set layout to "centered"
   },
