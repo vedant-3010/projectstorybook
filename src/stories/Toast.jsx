@@ -2,12 +2,23 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./toast.css";
-import { X, CheckCircle, WarningCircle, Warning } from "@phosphor-icons/react";
+import { X, Trash, CheckCircle, WarningCircle, Warning, InformationCircle } from "@phosphor-icons/react";
 
-const Toast = ({ icon, message, divider,actionButton, onActionClick, onClose }) => {
+const Toast = ({
+  icon,
+  message,
+  divider,
+  actionButton,
+  onActionClick,
+  onClose,
+}) => {
   return (
     <div className="toast">
-      <div className={`toast-icon ${icon}`} />
+      {icon && (
+        <div className="toast-icon">
+          <Trash size={24} />
+        </div>
+      )}
       <span className="toast-message">{message}</span>
       {divider && <div className="toast-divider" />}
       {actionButton && (
@@ -16,9 +27,9 @@ const Toast = ({ icon, message, divider,actionButton, onActionClick, onClose }) 
         </button>
       )}
       {onClose && (
-        <button className="toast-close-button" onClick={onClose}>
-          <X />
-        </button>
+        <div className="toast-close-button" onClick={onClose}>
+          <X fontSize={"24px"} />
+        </div>
       )}
     </div>
   );
