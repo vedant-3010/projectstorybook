@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Quick-Reply-Storybook
+# [Storybook Link](https://quick-reply-storybook.vercel.app/?path=/docs/components-toast--docs)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# [Sample toast on live website](https://projectstorybook.vercel.app/)
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+The `Toast` component is a versatile and customizable React component for displaying toast notifications in your web applications. It provides flexibility in displaying various types of messages with optional action buttons and close buttons.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Customizable**: Display toast notifications with customizable message, icon, divider, action button, and close button.
+- **Different Icons**: Supports different types of icons: 'information', 'warning', 'error', 'success'.
+- **Divider**: Option to display a divider between the message and the action button.
+- **Callback function**: Action button can trigger a callback function when clicked.
+- **Dismiss**: Close button allows users to dismiss the toast.
+- **Automatic Dismissal**: Toast notifications automatically disappear after three seconds, to prevent cluttering the user interface.
+- **Styles**: Customizable styles using CSS.
+- **Integration**: Easy integration into React applications.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Install all dependiences
+    ```bash
+    npm install
+    ```
+2. Run Storybook locally
+    ```bash
+    npm run storybook
+    ```
+3. Access here
+     ```bash
+     http://localhost:6006/
+     ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contributing
 
-### `npm run build`
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## License
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md)
