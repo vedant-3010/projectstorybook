@@ -10,9 +10,15 @@ export default {
     layout: "centered",
   },
   argTypes: {
+    iconContainer: {
+      control: {
+        type: "boolean",
+      },
+    },
+
     icon: {
       control: {
-        type: "boolean", // Set control type to boolean
+        type: "select",
       },
     },
     message: {
@@ -27,6 +33,9 @@ export default {
     onActionClick: {
       action: "onActionClick",
     },
+    onCloseAction: {
+      action: "onCloseAction",
+    },
     onClose: {
       control: "boolean",
     },
@@ -37,7 +46,17 @@ const Template = (args) => <Toast {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  icon: true, // Default icon to true
+  iconContainer: false,
+  message: "Message here",
+  divider: true,
+  actionButton: true,
+  onClose: true,
+};
+
+export const Full = Template.bind({});
+Full.args = {
+  iconContainer: true,
+  icon: "information",
   message: "Message here",
   divider: true,
   actionButton: true,
@@ -46,7 +65,7 @@ Default.args = {
 
 export const WitoutIcon = Template.bind({});
 WitoutIcon.args = {
-  icon: false, // Set icon prop to false
+  iconContainer: false, // Set icon prop to false
   message: "Message here",
   divider: true,
   actionButton: true,
@@ -55,7 +74,7 @@ WitoutIcon.args = {
 
 export const WithoutActionButton = Template.bind({});
 WithoutActionButton.args = {
-  icon: true,
+  iconContainer: true,
   message: "Message here",
   divider: true,
   actionButton: false, // Set actionButton prop to false
@@ -64,7 +83,7 @@ WithoutActionButton.args = {
 
 export const WithoutDivider = Template.bind({});
 WithoutDivider.args = {
-  icon: true,
+  iconContainer: true,
   message: "Message here",
   divider: false, // Set divider prop to false
   actionButton: true,
@@ -73,7 +92,7 @@ WithoutDivider.args = {
 
 export const TextAndIcon = Template.bind({});
 TextAndIcon.args = {
-  icon: true,
+  iconContainer: true,
   message: "Message here",
 };
 
@@ -92,4 +111,44 @@ export const TextAndActionButton = Template.bind({});
 TextAndActionButton.args = {
   message: "Message here",
   actionButton: true,
+};
+
+export const NotificationInformation = Template.bind({});
+NotificationInformation.args = {
+  iconContainer: true,
+  icon: "information",
+  message: "Message here",
+  divider: true,
+  actionButton: true,
+  onClose: true,
+};
+
+export const NotificationWarning = Template.bind({});
+NotificationWarning.args = {
+  iconContainer: true,
+  icon: "warning",
+  message: "Message here",
+  divider: true,
+  actionButton: true,
+  onClose: true,
+};
+
+export const NotificationError = Template.bind({});
+NotificationError.args = {
+  iconContainer: true,
+  icon: "error",
+  message: "Message here",
+  divider: true,
+  actionButton: true,
+  onClose: true,
+};
+
+export const NotificationSuccess = Template.bind({});
+NotificationSuccess.args = {
+  iconContainer: true,
+  icon: "success",
+  message: "Message here",
+  divider: true,
+  actionButton: true,
+  onClose: true,
 };
